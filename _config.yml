@@ -49,4 +49,4 @@ code_dir: downloads/code
 category_dir: blog/categories
 titlecase: true       # Converts page and post titles to titlecase
 
-subscribe_rss: /feed.xml
+subscribe_rss: /atom.xml

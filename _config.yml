@@ -1,0 +1,52 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+
+gems: [jekyll-paginate]
+
+title: Rest for the Wicked
+subtitle: Thoughts on networked systems
+author: Colin Scott
+email: cs@cs
+description: "Thoughts on distributed systems"
+baseurl: "/" # the subpath of your site, e.g. /blog
+#root: /
+keywords: SDN, software-defined networking, distributed systems, troubleshooting, Berkeley, Colin Scott, Scott Shenker
+url: http://colin-scott.github.io
+twitter_username: _colin_scott_
+github_username:  colin-scott
+subscribe_rss: /atom.xml
+permalink: /blog/:year/:month/:day/:title/
+
+# Build settings
+markdown: rdiscount
+
+rdiscount:
+  extensions: [ footnotes ]
+  parse_block_html: true
+
+google_analytics_tracking_id: UA-29849261-2
+
+disqus_short_name: restforthewicked
+disqus_show_comment_count: true
+
+paginate: 10          # Posts per page on the blog index
+#pagination_dir: blog  # Directory base for pagination URLs eg. /blog/page/2/
+paginate_path: "/blog/page:num/"
+
+# Default date format is "ordinal" (resulting in "July 22nd 2007")
+# You can customize the format as defined in
+# http://www.ruby-doc.org/core-1.9.2/Time.html#method-i-strftime
+# Additionally, %o will give you the ordinal representation of the day
+date_format: "ordinal"
+
+code_dir: downloads/code
+category_dir: blog/categories
+titlecase: true       # Converts page and post titles to titlecase
+
+subscribe_rss: /feed.xml

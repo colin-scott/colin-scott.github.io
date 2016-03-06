@@ -166,8 +166,8 @@ following:
 #### Solutions
 
 The main technique for addressing these challenges is **distributed tracing**. The
-core idea is simple[^25]: have the first machine assign an ID to the incoming request,
-and attach that ID to all messages that are generated in response to the
+core idea is simple:[^25] have the first machine assign an ID to the incoming request,
+and attach that ID (plus a pointer to the parent task) to all messages that are generated in response to the
 incoming request. Then have each downstream task that is involved in processing those
 messages log timing information associated with the request ID to disk.
 
@@ -226,7 +226,7 @@ What are the challenges of detecting problems in production?:
 
 An old idea is particularly useful here: **distributed snapshots**.[^29]
 Distributed snapshots are defined by consistent cuts: a subset of the events in
-the systems' execution such if any event e is contained in the subset, all
+the system's execution such if any event e is contained in the subset, all
 'happens-before' predecessors of e are also contained in the subset.
 
 Distributed snapshots allow us to obtain a global view of the state of all
@@ -243,8 +243,8 @@ it's quite likely that the bug will happen more than once.[^bofa]
 
 Identifying which pieces of hardware in your system have failed (or are exhibiting
 flaky behavior) is a non-trivial task when you only have a partial view into
-the state of the overall system. **Root cause analysis** techniques
-seek to infer unknown failure events from limited monitoring
+the state of the overall system. **Root cause analysis** techniques (a
+frustratingly generic name IMHO..) seek to infer unknown failure events from limited monitoring
 data.[^36]<sup>,</sup>[^37]
 
 ### That's It For Now; More to Come!

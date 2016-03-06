@@ -193,7 +193,7 @@ production workload so that we can reproduce it in a test environment,[^20]
 resource accounting[^21] and 'what-if' predictions for resource planning,[^22]
 track flows across administrative domains,[^23] visualize traces and express expectations about how flows should
 or should not be structured,[^24] monitor performance isolation in a multi-tenant environment,[^27] and most relevant for performance regression
-testing: detecting and diagnosing performance anomalies.[^26]<sup>,</sup>[^25]<sup>,<sup>[^20]
+testing: detecting and diagnosing performance anomalies.[^26]
 
 Distributed tracing does require a fair amount of engineering effort: we need to
 modify our system to attach and propagate IDs (it's unfortunately non-trivial to
@@ -208,7 +208,7 @@ out the source of latency once we have detected a problem.
 ### Discovering Problems in Production
 
 Despite our best efforts, bugs invariably make it into production.[^28] Still,
-we'd prefer to discover and diagnose these issues means that are more
+we'd prefer to discover and diagnose these issues through means that are more
 proactive than user complaints.
 What are the challenges of detecting problems in production?:
 

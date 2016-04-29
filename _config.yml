@@ -24,7 +24,12 @@ subscribe_rss: /atom.xml
 permalink: /blog/:year/:month/:day/:title/
 
 # Build settings
-markdown: rdiscount
+markdown: kramdown
+
+kramdown:
+  parse_block_html: false
+  parse_span_html: false
+  html_to_native: false
 
 rdiscount:
   extensions: [ footnotes ]

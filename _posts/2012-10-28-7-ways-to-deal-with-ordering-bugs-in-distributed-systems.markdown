@@ -27,8 +27,7 @@ eventually bring your system to a screeching halt.
 
 To make the discussion more concrete, let's look at an example.
 
-<img src="http://www.eecs.berkeley.edu/~rcs/research/example_bug.png"
-alt="Floodlight bug" width=100%>
+![Floodlight bug](http://www.eecs.berkeley.edu/~rcs/research/example_bug.png){:width="100%"}
 
 The figure above depicts a race condition [1] in
 [Floodlight](http://floodlight.openflowhub.org/), a distributed controller for

@@ -186,7 +186,7 @@ production deployment.
 
 Here is an illustration[^17]:
 
-![Trace Example](http://eecs.berkeley.edu/~rcs/research/tracing_example.png =700x700)
+![Trace Example](http://eecs.berkeley.edu/~rcs/research/tracing_example.png){:height="700px" width="700px"}
 
 What can we do with causal trees? A bunch of cool stuff: characterize the
 production workload so that we can reproduce it in a test environment,[^20]

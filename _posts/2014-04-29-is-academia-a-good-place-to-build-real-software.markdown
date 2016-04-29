@@ -39,7 +39,7 @@ It turns out that the [Bureau of Labor Statistics](http://www.bls.gov/)
 publishes exactly the [data](http://www.bls.gov/data/) we need for the United States.
 Here's what I found:
 
-<img src="http://www.eecs.berkeley.edu/~rcs/research/oes.jpg" alt="OES data" width=100%>
+![OES data](http://www.eecs.berkeley.edu/~rcs/research/oes.jpg){:width="100%"}
 
 Hm. The first thing we notice is that it's hard to even see the line for academic and industrial researchers.
 To give you a sense of where it's at, the y-coordinate at May, 2013 for computer science teachers and professors is 35,770, two
@@ -47,19 +47,19 @@ orders of magnitude smaller than the 3,339,440 total employees in the software i
 
 What we really care about though is the ratio of employees in industry to number of researchers:
 
-<img src="http://www.eecs.berkeley.edu/~rcs/research/oes_ratio.jpg" alt="OES ratio data" width=100%>
+![OES ratio data](http://www.eecs.berkeley.edu/~rcs/research/oes_ratio.jpg){:width="100%"}
 
 In the last few years, both the software industry and Academia are growing at roughly the same rate, whereas researchers in industrial
 labs appear to be dropping off relative to the software industry. We can see this relative growth rate better by normalizing the datasets (dividing each datapoint by the maximum datapoint
 in its series -- might be better to take the derivative, but I'm too lazy to
 figure out how to do that at the moment):
 
-<img src="http://www.eecs.berkeley.edu/~rcs/research/oes_normalized.jpg" alt="OES normalized data" width=100%>
+![OES normalized data](http://www.eecs.berkeley.edu/~rcs/research/oes_normalized.jpg){:width="100%"}
 
 The data for the previous graphs only goes back to 1995. The Bureau of Labor
 Statistics also publishes coarser granularity going all the way to 1950 and beyond:
 
-<img src="http://www.eecs.berkeley.edu/~rcs/research/nes.jpg" alt="NES data" width=100%>
+![NES data](http://www.eecs.berkeley.edu/~rcs/research/nes.jpg){:width="100%"}
 
 (See the hump around 2001?)
 

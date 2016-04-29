@@ -40,15 +40,14 @@ The Raft protocol already has a set of nicely defined safety
 conditions, which we'll use as our assertions.
 
 <div class="row">
-  <div class="span1">
-  </div>
+<div class="span1">
+</div>
 
-  <div class="span5">
-    <img src="http://www.eecs.berkeley.edu/~rcs/research/raft_invariants.png"
-    alt="Raft Invariants" width=100%>
-  </div>
+<div class="span5" markdown="1">
+![Raft Invariants](http://www.eecs.berkeley.edu/~rcs/research/raft_invariants.png){:width="100%"}
+</div>
 
-  <div class="span5">
+<div class="span5">
 <p>
 Figure 3 from the <a href="http://ramcloud.stanford.edu/raft.pdf">Raft paper</a> (copied left) shows Raft's key invariants.
 We use these invariants as our assertions. Each assertion should hold at
@@ -68,7 +67,7 @@ ever fails, we've found a bug.
   </div>
 </div>
 
-</br>
+<br/>
 
 #### Input generation
 
@@ -99,7 +98,7 @@ distributed system tries to send. The basic architecture of our test harness
   <div class="span1">
   </div>
 
-  <div class="span5">
+<div class="span5">
 <p>
 Every time a process sends an RPC message, the Test Harness intercepts it and places
 it into a buffer. The Test Coordinator later decides when to deliver that message to the recipient.
@@ -112,11 +111,11 @@ The Test Coordinator also injects external events (external message sends, failu
 at random according to the probability weights given by the fuzz test
 specification.
 </p>
-  </div>
+</div>
 
-  <div class="span6">
-    <img src="http://www.eecs.berkeley.edu/~rcs/research/test_infrastructure.png" alt="Test Harness" width=100%>
-  </div>
+<div class="span6" markdown="1">
+![Test Harness](http://www.eecs.berkeley.edu/~rcs/research/test_infrastructure.png){:width="100%"}
+</div>
 </div>
 
 Interposing at the RPC layer has a few advantages over interposing at a
@@ -208,9 +207,9 @@ election term that is lower than what they believe is the current term.
   <div class="span1">
   </div>
 
-  <div class="span4">
-    <img src="http://www.eecs.berkeley.edu/~rcs/research/delayed_term.jpg" alt="Delayed Term" height="50" id="myheight">
-  </div>
+<div class="span4" markdown="1">
+![Delayed Term](http://www.eecs.berkeley.edu/~rcs/research/delayed_term.jpg){:alt="Delayed Term" height="50" id="myheight"}
+</div>
 
   <div class="span6">
 <p>
@@ -224,7 +223,7 @@ a previous election term.
 
 #### [raft-56](https://github.com/ktoso/akka-raft/issues/56): Processes forget who they voted for.
 
-akka-raft is written as an [FSM](http://doc.akka.io/docs/akka/snapshot/scala/fsm.html). When
+akka-raft is written as an [FSM](http://doc.akka.io/docs/akka/snapshot/scala/fsm.html). When 
 making a state transition, FSM processes specify both which state
 they want to transition to, and which instance variables they want to keep
 once they have transitioned.
@@ -233,9 +232,9 @@ once they have transitioned.
   <div class="span1">
   </div>
 
-  <div class="span6">
-    <img src="http://www.eecs.berkeley.edu/~rcs/research/raft_fsm.png" alt="Raft FSM" width=100%>
-  </div>
+<div class="span6" markdown="1">
+![Raft FSM](http://www.eecs.berkeley.edu/~rcs/research/raft_fsm.png){:width="100%"}
+</div>
 
   <div class="span5">
 <p>
@@ -348,7 +347,7 @@ support UDP, but it's on their radar.
 The invariant violation here was a violation of the 'Leader Completeness' safety property, where a leader is
 elected that doesn't have all of the needed log entries.
 
-<img src="http://www.eecs.berkeley.edu/~rcs/research/UDP_bug.jpg" alt="Lamport Time Diagram" width=60%>
+![Lamport Time Diagram](http://www.eecs.berkeley.edu/~rcs/research/UDP_bug.jpg){:width="60%"}
 
 Leaders replicate uncommitted `ClientCommands` to the rest of the cluster in batches.
 Suppose a follower with an empty log receives an `AppendEntries` containing

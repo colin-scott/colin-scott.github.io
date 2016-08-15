@@ -268,6 +268,7 @@ If you'd like to add anything I missed or correct topics I've mischaracterized, 
 [pull
 request](https://github.com/colin-scott/colin-scott.github.io/tree/master/_posts/2016-03-04-technologies-for-testing-and-debugging-distributed-systems.markdown)!
 
+---
 
 [^1]: "Heartbeat: A Timeout-Free Failure Detector for Quiescent Reliable Communication." International Workshop on Distributed Algorithms '97
 

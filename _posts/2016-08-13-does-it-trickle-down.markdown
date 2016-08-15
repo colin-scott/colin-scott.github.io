@@ -24,7 +24,7 @@ In this blog post I seek to evaluate their claim.
 ### Scoping the hypothesis
 
 The question I posed was admittedly vague. What exactly did I mean by
-`benefit', and how can we possibly make a statement about
+'benefit', and how can we possibly make a statement about
 all technological innovations?
 
 To scope the discussion, let's focus on a more specific question:
@@ -89,7 +89,7 @@ rich, yet the popularity of the iPhone sparked a drive towards cellular data
 networks which are now the dominant mode of Internet in the developing world.
 
 It's also undeniably true that information technology positively touches the lives of the poor,
-even if the jury is still out on whether it can play a significant role in helping significant numbers of them develop their
+even if the jury is still out on whether it can play a significant role in helping large numbers of them develop their
 socioeconomic well-being.
 
 Personally, I've decided to pivot my direction away from high tech. I'm

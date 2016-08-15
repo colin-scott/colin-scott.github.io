@@ -75,7 +75,7 @@ numbers we see starting in the 1970s (well before the popularity of the Web) can
 changes in the Chinese government's polices, and, more recently, India's own reforms starting in 1991. It seems entirely feasible that
 information technology played a negligible role in these transformations.
 
-Personally, I'm not convinced that the innovations we (systems researchers) produce, which are often
+I'm not personally convinced that the innovations we (systems researchers) produce, which are often
 targeted towards the more privileged members of society, currently play a significant role in
 the socioeconomic well-being of the poor.
 

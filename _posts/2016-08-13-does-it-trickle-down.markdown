@@ -93,7 +93,7 @@ even if the jury is still out on whether it can play a significant role in helpi
 socioeconomic well-being.
 
 Personally, I've decided to pivot my direction away from high tech. I'm
-devoting the next year or two to understanding what role, if any, IT can play in the lives of the less privileged. We'll
+devoting the next year or two to understanding what role IT can play in the lives of the less privileged. We'll
 see what I learn!
 
 ---

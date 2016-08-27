@@ -72,7 +72,7 @@ technologies.
 A less optimistic
 [reading](http://www.humanosphere.org/basics/2015/09/global-poverty-falling-not-fast-may-think/) is that the decline in poverty
 numbers we see starting in the 1970s (well before the popularity of the Web) can largely be attributed to
-changes in the Chinese government's polices, and, more recently, India's own reforms starting in 1991. It seems entirely feasible that
+changes in the Chinese government's polices, and, more recently, India's own reforms starting in 1991.[^3] It seems entirely feasible that
 information technology played a negligible role in these transformations.
 
 I'm not personally convinced that the innovations we (systems researchers) produce, which are often
@@ -101,3 +101,5 @@ see what I learn!
 [^1]: Strictly speaking, neither correlation nor lack thereof prove anything about causation. But most scientists probably think [Hume](https://en.wikipedia.org/wiki/Problem_of_induction) was just being pedantic.
 
 [^2]: The World Bank announced plans to move their [definition](https://en.wikipedia.org/wiki/Extreme_poverty#cite_note-7) of extreme poverty to $1.90 per day to recognize higher price levels in developing countries than previously estimated.
+
+[^3]: See Chapter 2 and 6 of Angus Deaton's "The Great Escape" for an in-depth analysis of this data.

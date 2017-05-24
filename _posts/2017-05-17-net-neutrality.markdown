@@ -129,4 +129,6 @@ Thanks to Bill Thies, Aurojit Panda, and Sachin Gaur for helping me shape these 
 
 [^9]: As in the [ban of Free Basics within India](https://www.theguardian.com/technology/2016/may/12/facebook-free-basics-india-zuckerberg).
 
+[^10]: Which does not require a toll-free number, you can run it over a normal phone number.
+
 [^11]: With the (sole?) exception of the USA, phone calls are billed only to the caller, not the receiver. By giving a missed call (for free), the client can signal to the server to call them back, such that the server bears the cost of the phone call rather than the client.

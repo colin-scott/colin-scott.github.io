@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "Do Toll-Free Phone Lines Violate Network Neutrality? A Blueprint for Providing Toll-Free Data"
-bibliography: bib.bib
 date: 2017-05-17 00:01:12
 comments: true
 categories:

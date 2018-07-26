@@ -41,7 +41,7 @@ execution at the level of network messages. That is, you should be able to
 generate messages, control the order in which they arrive, and observe how the
 distributed system reacts.
 
-Shameless self-promotion: [STS](http://ucb-sts.github.io/sts/walkthrough#interactive_mode)
+Shameless self-promotion: [STS](https://ucb-sts.github.io/sts/walkthrough#interactive_mode)
 supports an "Interactive Mode" that takes over control of the
 (software) network separating the nodes of a distributed system. This allows
 you to interactively reorder or drop messages, inject failures, or check

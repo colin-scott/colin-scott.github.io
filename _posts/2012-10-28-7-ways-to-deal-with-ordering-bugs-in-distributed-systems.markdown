@@ -27,10 +27,10 @@ eventually bring your system to a screeching halt.
 
 To make the discussion more concrete, let's look at an example.
 
-![Floodlight bug](http://www.eecs.berkeley.edu/~rcs/research/example_bug.png){:width="100%"}
+![Floodlight bug](https://www.eecs.berkeley.edu/~rcs/research/example_bug.png){:width="100%"}
 
 The figure above depicts a race condition [1] in
-[Floodlight](http://floodlight.openflowhub.org/), a distributed controller for
+[Floodlight](https://floodlight.openflowhub.org/), a distributed controller for
 software-defined networks. With Floodlight, switches maintain one hot
 connection to a master controller and
 one or more cold connections to replica controllers. The master holds the
@@ -182,14 +182,14 @@ computation of the entire network configuration whenever a new event comes in.
 Race conditions don't happen if there is no shared state!
 
 Incidentally, Google's [wide-area network
-controller](http://www.eecs.berkeley.edu/~rcs/research/google-onrc-slides.pdf)
+controller](https://www.eecs.berkeley.edu/~rcs/research/google-onrc-slides.pdf)
 is almost entirely stateless, presumably for many of the same reasons.
 
 ### Force yourself to be stateless
 
 In the spirit stateless computation, why not write your code in a language
 that doesn't allow you to keep state at all? Programs written in declarative
-languages such as [Overlog](http://p2.berkeley.intel-research.net/) have no
+languages such as [Overlog](https://p2.berkeley.intel-research.net/) have no
 explicit ordering whatsoever. Programmers simply declare rules such as "If the
 switch has a link failure, then flush the routing entries that go over that
 link", and the language runtime handles the order in which the computation
@@ -254,7 +254,7 @@ routing tables of newly connected switches, but the same flavor of race
 condition could occur for link failures. We chose to focus on link failures
 because they're likely to occur much more often than switch connects.
 
-[4] It's possible in some cases to use a [model checker](http://www.macesystems.org/) to automatically find race conditions, but the runtime complexity is often intractable and very few systems do this in practice.
+[4] It's possible in some cases to use a [model checker](https://www.macesystems.org/) to automatically find race conditions, but the runtime complexity is often intractable and very few systems do this in practice.
 
 [5] There are actually a handful of ways to implement state machine replication. Ours depend on a concensus algorithm to choose the master, but you could also run the concensus algorithm itself to achieve replication. There are also cheaper algorithms such as reliable broadcast. You can also get significantly better read throughput with chain replication, which doesn't require quorum for reads, but writes become more complicated.
 
@@ -263,5 +263,5 @@ the switch configurations. Nonetheless, with state machine replication the
 backup will always know what commands need to be sent to switches if and when
 it takes over for the master.
 
-[7] Although if your goal is only to provide connectivity, it's [not clear](http://networkheresy.com/2011/11/17/is-openflowsdn-good-at-forwarding/)
+[7] Although if your goal is only to provide connectivity, it's [not clear](https://networkheresy.com/2011/11/17/is-openflowsdn-good-at-forwarding/)
 why you're using SDN in the first place.

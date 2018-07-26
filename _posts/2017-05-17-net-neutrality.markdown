@@ -116,11 +116,11 @@ Thanks to Bill Thies, Aurojit Panda, and Sachin Gaur for helping me shape these 
 
 [^2]: [Internet.org State of Connectivity Report](https://info.internet.org/en/wp-content/uploads/sites/4/2016/07/state-of-connectivity-2015-2016-02-21-final.pdf)
 
-[^3]: In fact there are two startups, [Jana](http://www.jana.com/home) and [Movivo](http://www.movivo.com/), who are in the business of making it easy for content providers to reimburse consumers for the costs of their data usage, by sending mobile top-ups to the consumer after they have consumed the data. In India, Airtel rolled out a [business model](https://en.wikipedia.org/wiki/Airtel_Zero) that allowed content providers to pay for data, but this has come under substantial criticism from network neutrality advocates.
+[^3]: In fact there are two startups, [Jana](https://www.jana.com/home) and [Movivo](https://www.movivo.com/), who are in the business of making it easy for content providers to reimburse consumers for the costs of their data usage, by sending mobile top-ups to the consumer after they have consumed the data. In India, Airtel rolled out a [business model](https://en.wikipedia.org/wiki/Airtel_Zero) that allowed content providers to pay for data, but this has come under substantial criticism from network neutrality advocates.
 
 [^4]: [Historical data](https://ourworldindata.org/democracy/) on the fraction of the world population living in democratic countries.
 
-[^5]: [India ends spectrum auction for 9.5 billion dollars](http://www.livemint.com/Industry/xt5r4Zs5RmzjdwuLUdwJMI/Spectrum-auction-ends-after-lukewarm-response-from-telcos.html)
+[^5]: [India ends spectrum auction for 9.5 billion dollars](https://www.livemint.com/Industry/xt5r4Zs5RmzjdwuLUdwJMI/Spectrum-auction-ends-after-lukewarm-response-from-telcos.html)
 
 [^6]: As in Jordan or Eritrea.
 

@@ -7,11 +7,11 @@ comments: true
 categories:
 ---
 
-Last month, [Crista Lopes](http://tagide.com/about.html) asked the twitterverse:
+Last month, [Crista Lopes](https://tagide.com/about.html) asked the twitterverse:
 
 <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Twitter friends: what papers or frameworks do you recommend regarding distributed systems regression or integration testing techniques?</p>&mdash; Crista Lopes (@cristalopes) <a href="https://twitter.com/cristalopes/status/690663597752631296">January 22, 2016</a></blockquote> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-She compiled the answers she received in a [blog post](http://tagide.com/blog/research/distributed-systems-testing-the-lost-world/), which ended on a
+She compiled the answers she received in a [blog post](https://tagide.com/blog/research/distributed-systems-testing-the-lost-world/), which ended on a
 dispirited note:
 
 >  In spite of unit testing being a standard practice everywhere, things don't
@@ -25,7 +25,7 @@ compelled to share some of what I've learned about testing over the last five
 years.
 
 Crista points out that there are several existing surveys of testing
-techniques for distributed systems, e.g. Inés Sombra's RICON 2014 [talk](https://speakerdeck.com/randommood/testing-in-a-distributed-world) or Caitie McCaffrey's [CACM article](http://cacm.acm.org/magazines/2016/2/197420-the-verification-of-a-distributed-system/fulltext).
+techniques for distributed systems, e.g. Inés Sombra's RICON 2014 [talk](https://speakerdeck.com/randommood/testing-in-a-distributed-world) or Caitie McCaffrey's [CACM article](https://cacm.acm.org/magazines/2016/2/197420-the-verification-of-a-distributed-system/fulltext).
 Here, I'll structure the discussion around the _challenges_ posed by
 different testing goals, and the tradeoffs different testing technologies make in overcoming those
 challenges. I'll mostly cover end-to-end techniques (per Crista's original
@@ -186,7 +186,7 @@ production deployment.
 
 Here is an illustration[^17]:
 
-![Trace Example](http://eecs.berkeley.edu/~rcs/research/tracing_example.png){:height="700px" width="700px"}
+![Trace Example](https://eecs.berkeley.edu/~rcs/research/tracing_example.png){:height="700px" width="700px"}
 
 What can we do with causal trees? A bunch of cool stuff: characterize the
 production workload so that we can reproduce it in a test environment,[^20]

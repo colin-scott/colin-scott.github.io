@@ -6,8 +6,8 @@ comments: true
 categories: 
 ---
 
-I recently came across a [statement](http://aphyr.com/posts/285-call-me-maybe-riak) in [Aphyr's](https://twitter.com/aphyr) excellent
-[Jepsen](http://aphyr.com/tags/jepsen) blog series that caught my eye:
+I recently came across a [statement](https://aphyr.com/posts/285-call-me-maybe-riak) in [Aphyr's](https://twitter.com/aphyr) excellent
+[Jepsen](https://aphyr.com/tags/jepsen) blog series that caught my eye:
 
 > "In a very real sense, [network] partitions are just really big windows of concurrency."
 
@@ -17,7 +17,7 @@ which occur in a network but don't really occur on a single chip [0], appear to 
 distinguishing property of distributed systems. But if partitions are just a
 special case of concurrency, then there shouldn't be any fundamental reasons
 why algorithms for multicore computational models
-(such as [PRAM](http://en.wikipedia.org/wiki/Parallel_random-access_machine)) wouldn't be perfectly suitable for solving all the
+(such as [PRAM](https://en.wikipedia.org/wiki/Parallel_random-access_machine)) wouldn't be perfectly suitable for solving all the
 problems we might encounter in a distributed setting.
 We know this to be false,
 so I've been trying to puzzle out precisely what
@@ -140,18 +140,18 @@ more and more blurred: modern multicore chips face both unbounded
 asynchrony (from the growing gap between levels of the memory hierarchy) and partial failure (from voltage
 issues).
 
-[1] Thanks to [Ali Ghodsi](http://www.cs.berkeley.edu/~alig/) for helping me tease out the differences between these properties.
+[1] Thanks to [Ali Ghodsi](https://www.cs.berkeley.edu/~alig/) for helping me tease out the differences between these properties.
 
 [2] or writing to shared memory, which is essentially the same as sending a
 message.
 
 [3] See, for example, PRAM or BSP, which assume that every node can
 communicate with every other node within each "round". It's trivial to solve
-[hard](http://groups.csail.mit.edu/tds/papers/Lynch/pods83-flp.pdf) problems like
+[hard](https://groups.csail.mit.edu/tds/papers/Lynch/pods83-flp.pdf) problems like
 consensus in this world, because you can always just take a majority
 vote and decide within two rounds.
 
-[4] See Ali Ghodsi's excellent [slides](http://www.cs.berkeley.edu/~alig/cs294-91/events-links.pptx) for a taxonomy of these failure models.
+[4] See Ali Ghodsi's excellent [slides](https://www.cs.berkeley.edu/~alig/cs294-91/events-links.pptx) for a taxonomy of these failure models.
 
 [5] Note that this is not equivalent to 'crash-recovery'. Crash-recovery is
 actually stronger than fail-stop, because nodes *may* recover or they may

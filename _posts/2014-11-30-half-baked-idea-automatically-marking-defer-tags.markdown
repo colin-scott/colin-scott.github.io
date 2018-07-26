@@ -41,7 +41,7 @@ performance hit, since each script adds 1 RTT plus computation time
 to the overall page load time.
 
 Fortunately, the HTML standard provides a mechanism that allows developers to mitigate this
-cost: the [defer attribute](http://www.w3schools.com/tags/att_script_defer.asp). The defer attribute tells the browser
+cost: the [defer attribute](https://www.w3schools.com/tags/att_script_defer.asp). The defer attribute tells the browser
 that it's OK to fetch and execute a Javascript tag asynchronously.
 
 Unfortunately, using the defer tag is not straightforward. The issue is

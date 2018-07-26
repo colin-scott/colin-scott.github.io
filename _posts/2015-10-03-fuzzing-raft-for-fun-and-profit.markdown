@@ -12,7 +12,7 @@ Research on distributed systems is often motivated by some variation of the foll
 
 That statement seems convincing enough, but it's rather abstract. In this post
 we'll gain a concrete understanding of what makes distribution so challenging,
-by describing correctness bugs we found in an [implementation](https://github.com/ktoso/akka-raft) of the [Raft consensus protocol](http://ramcloud.stanford.edu/raft.pdf).
+by describing correctness bugs we found in an [implementation](https://github.com/ktoso/akka-raft) of the [Raft consensus protocol](https://ramcloud.stanford.edu/raft.pdf).
 
 Raft is an interesting example because its authors designed it to be
 understandable and straightforward to implement. As we'll see, implementing even the relatively
@@ -44,12 +44,12 @@ conditions, which we'll use as our assertions.
 </div>
 
 <div class="span5" markdown="1">
-![Raft Invariants](http://www.eecs.berkeley.edu/~rcs/research/raft_invariants.png){:width="100%"}
+![Raft Invariants](https://www.eecs.berkeley.edu/~rcs/research/raft_invariants.png){:width="100%"}
 </div>
 
 <div class="span5">
 <p>
-Figure 3 from the <a href="http://ramcloud.stanford.edu/raft.pdf">Raft paper</a> (copied left) shows Raft's key invariants.
+Figure 3 from the <a href="https://ramcloud.stanford.edu/raft.pdf">Raft paper</a> (copied left) shows Raft's key invariants.
 We use these invariants as our assertions. Each assertion should hold at
 any point in Raft's execution.
 </p>
@@ -85,7 +85,7 @@ To generate the last two types of inputs, we specify a function for creating ran
 as well as probabilities for how often each event type (external message sends, failures, recoveries) should be injected.
 
 We gain control over the network by [interposing](https://github.com/NetSys/demi) on the distributed system's RPC layer, using [AspectJ](https://en.wikipedia.org/wiki/AspectJ). For now, we target a
-specific RPC system: [Akka](http://akka.io/). Akka is ideal because it provides
+specific RPC system: [Akka](https://akka.io/). Akka is ideal because it provides
 a narrow, general API that operates at a high level abstraction
 based around the [actor model](https://en.wikipedia.org/wiki/Actor_model).
 
@@ -114,7 +114,7 @@ specification.
 </div>
 
 <div class="span6" markdown="1">
-![Test Harness](http://www.eecs.berkeley.edu/~rcs/research/test_infrastructure.png){:width="100%"}
+![Test Harness](https://www.eecs.berkeley.edu/~rcs/research/test_infrastructure.png){:width="100%"}
 </div>
 </div>
 
@@ -125,7 +125,7 @@ Most importantly, we get fine-grained control over when each individual
 to drop or delay all packets between a given pair of processes [1].
 
 Targeting applications built on Akka gives us one other
-advantage: Akka provides a [timer API](http://doc.akka.io/docs/akka/2.4.0/scala/scheduler.html) that obviates the need for application
+advantage: Akka provides a [timer API](https://doc.akka.io/docs/akka/2.4.0/scala/scheduler.html) that obviates the need for application
 developers to read directly from the system clock. Timers are a crucial part of distributed systems,
 since they are used to detect failures. In Akka, timers are modeled
 as messages, to be delivered to the process that set the timer at a later
@@ -208,7 +208,7 @@ election term that is lower than what they believe is the current term.
   </div>
 
 <div class="span4" markdown="1">
-![Delayed Term](http://www.eecs.berkeley.edu/~rcs/research/delayed_term.jpg){:alt="Delayed Term" height="50" id="myheight"}
+![Delayed Term](https://www.eecs.berkeley.edu/~rcs/research/delayed_term.jpg){:alt="Delayed Term" height="50" id="myheight"}
 </div>
 
   <div class="span6">
@@ -223,7 +223,7 @@ a previous election term.
 
 #### [raft-56](https://github.com/ktoso/akka-raft/issues/56): Processes forget who they voted for.
 
-akka-raft is written as an [FSM](http://doc.akka.io/docs/akka/snapshot/scala/fsm.html). When 
+akka-raft is written as an [FSM](https://doc.akka.io/docs/akka/snapshot/scala/fsm.html). When 
 making a state transition, FSM processes specify both which state
 they want to transition to, and which instance variables they want to keep
 once they have transitioned.
@@ -233,7 +233,7 @@ once they have transitioned.
   </div>
 
 <div class="span6" markdown="1">
-![Raft FSM](http://www.eecs.berkeley.edu/~rcs/research/raft_fsm.png){:width="100%"}
+![Raft FSM](https://www.eecs.berkeley.edu/~rcs/research/raft_fsm.png){:width="100%"}
 </div>
 
   <div class="span5">
@@ -328,7 +328,7 @@ That's actually fine -- it just means that akka-raft currently assumes a crash-s
 model, where crashed nodes are never allowed to come back.
 
 The Akka runtime, however, has a [default
-behavior](http://doc.akka.io/docs/akka/snapshot/scala/fault-tolerance.html) that doesn't play nicely
+behavior](https://doc.akka.io/docs/akka/snapshot/scala/fault-tolerance.html) that doesn't play nicely
 with akka-raft's crash-stop failure assumption: it automatically restarts any process that throws an exception.
 When the process restarts, all its state is reinitialized.
 
@@ -347,7 +347,7 @@ support UDP, but it's on their radar.
 The invariant violation here was a violation of the 'Leader Completeness' safety property, where a leader is
 elected that doesn't have all of the needed log entries.
 
-![Lamport Time Diagram](http://www.eecs.berkeley.edu/~rcs/research/UDP_bug.jpg){:width="60%"}
+![Lamport Time Diagram](https://www.eecs.berkeley.edu/~rcs/research/UDP_bug.jpg){:width="60%"}
 
 Leaders replicate uncommitted `ClientCommands` to the rest of the cluster in batches.
 Suppose a follower with an empty log receives an `AppendEntries` containing
@@ -372,7 +372,7 @@ this see more widespread adoption in the future.
 I left many details of our approach out of this post for brevity's sake,
 particularly a description of my favorite part: how DEMi minimizes the faulty executions
 it finds to make them easier to understand. Check
-out our [paper draft](http://www.eecs.berkeley.edu/~rcs/research/nsdi_draft.pdf) for more details!
+out our [paper draft](https://www.eecs.berkeley.edu/~rcs/research/nsdi_draft.pdf) for more details!
 
 ### Footnotes
 
@@ -384,5 +384,5 @@ to.
 [2] How we perform this minimization is
 outside the scope of this blog post. Minimization is, in my opinion, the most
 interesting part of what we're doing here. Check out our
-[paper draft](http://www.eecs.berkeley.edu/~rcs/research/nsdi_draft.pdf) for more
+[paper draft](https://www.eecs.berkeley.edu/~rcs/research/nsdi_draft.pdf) for more
 information!

@@ -67,11 +67,11 @@ assumptions through the entire proof until you can finally check at the end
 whether they match up with the network model.
 
 To make reasoning about asynchrony easier, a theorist named Sam Toueg along
-with a few others at Cornell proposed the concept of [failure detectors](http://www.cs.cornell.edu/home/sam/FDpapers/CT96-JACM.ps).
+with a few others at Cornell proposed the concept of [failure detectors](https://www.cs.cornell.edu/home/sam/FDpapers/CT96-JACM.ps).
 Failure detectors allow algorithms to encapsulate timing assumptions:
 instead of manually setting timers to detect failures, we design our
 algorithms to ask an oracle about the presence of failures [2]. To implement the oracle, we
-[still](http://research.microsoft.com/en-us/people/weic/wdag97_hb.pdf) use timers,
+[still](https://research.microsoft.com/en-us/people/weic/wdag97_hb.pdf) use timers,
 but now we have all of our timing assumptions collected cleanly in one place.
 
 Failure detectors form a hierarchy. The strongest failure detector has perfect
@@ -96,7 +96,7 @@ Anyone interested in getting their hands dirty?
 
 #### Footnotes
 
-[1] Starting in [1988](http://groups.csail.mit.edu/tds/papers/Lynch/jacm88.pdf) and dwindling after [1996](http://www.cs.cornell.edu/home/sam/FDpapers/CT96-JACM.ps).
+[1] Starting in [1988](https://groups.csail.mit.edu/tds/papers/Lynch/jacm88.pdf) and dwindling after [1996](https://www.cs.cornell.edu/home/sam/FDpapers/CT96-JACM.ps).
 
 [2] Side note: failures detectors aren't widely used in practice. Instead, most
 distributed systems use ad-hoc network timeouts strewn throughout the code. At best, distributed systems use

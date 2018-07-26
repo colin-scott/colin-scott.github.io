@@ -43,7 +43,7 @@ data for the United States, using the federal
 government's [definition of
 poverty](https://en.wikipedia.org/wiki/Poverty_in_the_United_States):
 
-![US Poverty Data](http://eecs.berkeley.edu/~rcs/research/kentaro_data.png){:height="800px" width="800px"}
+![US Poverty Data](https://eecs.berkeley.edu/~rcs/research/kentaro_data.png){:height="800px" width="800px"}
 
 As we see, poverty rates in the USA haven't budged since the early 1970s, and
 the *absolute* number of people living in poverty has actually gone up. This
@@ -61,7 +61,7 @@ information technology does more to help the impoverished in the rest of the wor
 The remarkable chart below uses the World Bank's definition[^2]
 for extreme poverty at $1.25 per day adjusted to purchasing power parity:
 
-![Worldwide Poverty Data](http://eecs.berkeley.edu/~rcs/research/poverty_global.jpg){:height="800px" width="800px"}
+![Worldwide Poverty Data](https://eecs.berkeley.edu/~rcs/research/poverty_global.jpg){:height="800px" width="800px"}
 
 According to one reading, this data does not provide reason to doubt our
 trickle down hypothesis:
@@ -70,7 +70,7 @@ extreme poverty, which may be partially due to the proliferation of information
 technologies.
 
 A less optimistic
-[reading](http://www.humanosphere.org/basics/2015/09/global-poverty-falling-not-fast-may-think/) is that the decline in poverty
+[reading](https://www.humanosphere.org/basics/2015/09/global-poverty-falling-not-fast-may-think/) is that the decline in poverty
 numbers we see starting in the 1970s (well before the popularity of the Web) can largely be attributed to
 changes in the Chinese government's polices, and, more recently, India's own reforms starting in 1991.[^3] It seems entirely feasible that
 information technology played a negligible role in these transformations.

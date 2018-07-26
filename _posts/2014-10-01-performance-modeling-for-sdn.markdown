@@ -8,10 +8,10 @@ categories:
 
 At Berkeley I have the opportunity to work with some of the smartest undergrads around. One of the undergrads I work with,
 [Andrew Or](https://plus.google.com/109177137524762864782/about), did some neat work on modeling the performance of network control plane systems (e.g. SDN controllers).
-He decided to take a once-in-a-lifetime opportunity to join [Databricks](http://databricks.com/) before we got the chance to publish his work, so in his stead I thought
+He decided to take a once-in-a-lifetime opportunity to join [Databricks](https://databricks.com/) before we got the chance to publish his work, so in his stead I thought
 I'd share his work here.
 
-An interactive version of his performance model can be found at this [website](http://www.eecs.berkeley.edu/~rcs/research/convergence_modeling/). Description from the website:
+An interactive version of his performance model can be found at this [website](https://www.eecs.berkeley.edu/~rcs/research/convergence_modeling/). Description from the website:
 
 > <p>A key latency metric for network control plane systems is convergence time: the duration between when a change occurs in a network and when the network has converged to an updated configuration that accommodates that change. The faster the convergence time, the better.<p><br />
 > 

@@ -18,8 +18,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   {% capture canonical %}{{ site.url }}{% if site.permalink contains '.html' %}{{ page.url }}{% else %}{{ page.url | remove:'index.html' | strip_slash }}{% endif %}{% endcapture %}
-  <link rel="canonical" href="{{ canonical }}">
-  <link href="http://cryptm.org/~hpb/images/C.favicon.ico" rel="icon">
   <link href="{{ root_url }}/assets/css/bootstrap.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="{{ root_url }}/assets/css/bootstrap-responsive.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="{{ root_url }}/stylesheets/syntax/syntax.css" media="screen, projection" rel="stylesheet" type="text/css">
@@ -39,11 +37,32 @@
     .page-footer p {
       text-align: center;
     }
+    #godown {
+      height: 0px;
+    }
   </style>
   <script src="{{ root_url }}/javascripts/libs/jquery.js"></script>
   <script src="{{ root_url }}/javascripts/libs/modernizr-2.0.js"></script>
   <script src="{{ root_url }}/javascripts/libs/bootstrap.js"></script>
-  <script src="{{ root_url }}/javascripts/octopress.js" type="text/javascript"></script>
+  <script>
+      // On desktop devices, I've noticed that the navbar overlays on top of
+      //  the rest of the HTML body. This causes a hidden text issue.
+      // However, the navbar is a separate, non-overlay element on mobile
+      // devices... so we use some JS to distinguish those cases and add
+      // padding to a "godown" div element accordingly.
+      $("#navMenu").resize(function () {
+          if ($("#navMenu").position().top === $('#godown').position().top) {
+            $('#godown').height($("#navMenu").height() + 10);
+          }
+      });
+
+      $(window).load(function() {
+        if ($("#navMenu").position().top === $('#godown').position().top) {
+          $('#godown').height($("#navMenu").height() + 10);
+        }
+      });
+  </script>
+
   <script>
     var shiftWindow = function() { scrollBy(0, -50) };
     if (location.hash) shiftWindow();

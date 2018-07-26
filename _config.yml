@@ -7,7 +7,7 @@
 
 # Site settings
 
-gems: [jekyll-paginate]
+plugins: [jekyll-paginate]
 
 title: Rest for the Wicked
 subtitle: Thoughts on networked systems

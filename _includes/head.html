@@ -4,6 +4,8 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
   <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}</title>
   <meta name="author" content="{{ site.author }}">
 
@@ -12,14 +14,16 @@
   {% capture keywords %}{% if page.keywords %}{{ page.keywords }}{% elsif site.keywords %}{{ site.keywords }}{% endif %}{% endcapture %}
   <meta name="keywords" content="{{ keywords }}">
 
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+  integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+  crossorigin="anonymous">
+
   <!-- http://t.co/dKP3o1e -->
   <meta name="HandheldFriendly" content="True">
   <meta name="MobileOptimized" content="320">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   {% capture canonical %}{{ site.url }}{% if site.permalink contains '.html' %}{{ page.url }}{% else %}{{ page.url | remove:'index.html' | strip_slash }}{% endif %}{% endcapture %}
-  <link href="{{ root_url }}/assets/css/bootstrap.css" media="screen, projection" rel="stylesheet" type="text/css">
-  <link href="{{ root_url }}/assets/css/bootstrap-responsive.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="{{ root_url }}/stylesheets/syntax/syntax.css" media="screen, projection" rel="stylesheet" type="text/css">
   <style type="text/css">
     body {
@@ -37,32 +41,11 @@
     .page-footer p {
       text-align: center;
     }
-    #godown {
-      height: 0px;
+    .navbar {
+      margin-bottom: 20px;
     }
   </style>
-  <script src="{{ root_url }}/javascripts/libs/jquery.js"></script>
   <script src="{{ root_url }}/javascripts/libs/modernizr-2.0.js"></script>
-  <script src="{{ root_url }}/javascripts/libs/bootstrap.js"></script>
-  <script>
-      // On desktop devices, I've noticed that the navbar overlays on top of
-      //  the rest of the HTML body. This causes a hidden text issue.
-      // However, the navbar is a separate, non-overlay element on mobile
-      // devices... so we use some JS to distinguish those cases and add
-      // padding to a "godown" div element accordingly.
-      $("#navMenu").resize(function () {
-          if ($("#navMenu").position().top === $('#godown').position().top) {
-            $('#godown').height($("#navMenu").height() + 10);
-          }
-      });
-
-      $(window).load(function() {
-        if ($("#navMenu").position().top === $('#godown').position().top) {
-          $('#godown').height($("#navMenu").height() + 10);
-        }
-      });
-  </script>
-
   <script>
     var shiftWindow = function() { scrollBy(0, -50) };
     if (location.hash) shiftWindow();
@@ -71,4 +54,9 @@
   <link href="{{ site.subscribe_rss }}" rel="alternate" title="{{site.title}}" type="application/atom+xml">
   {% include custom/head.html %}
   {% include google_analytics.html %}
+
+  <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+  <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
 </head>
